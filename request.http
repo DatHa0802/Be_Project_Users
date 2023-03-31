@@ -1,0 +1,53 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "long1",
+    "password":"12345"
+}
+
+### 
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "long1",
+    "password":"12345"
+}
+
+### 
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI1OTAwMzdkOTFkOGIxMDY2OWUwNjIiLCJpYXQiOjE2ODAxODMzMTR9.o3KVxP_5B77dRfohYYRzBxQIsbWrqbyZCjkdNzfIV80
+
+
+
+
+{
+    "firstName": "Long",
+    "lastName": "Nguyen",
+    "email": "LongNguyen@gmail.com",
+    "gender": "Male"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI1OTAwMzdkOTFkOGIxMDY2OWUwNjIiLCJpYXQiOjE2ODAxODMzMTR9.o3KVxP_5B77dRfohYYRzBxQIsbWrqbyZCjkdNzfIV80
+
+###
+PUT http://localhost:5000/api/posts/642590ce1f1273b4bc735487
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI1OTAwMzdkOTFkOGIxMDY2OWUwNjIiLCJpYXQiOjE2ODAxODMzMTR9.o3KVxP_5B77dRfohYYRzBxQIsbWrqbyZCjkdNzfIV80
+
+{
+    "firstName": "long",
+    "lastName": "nguyen",
+    "email": "long@gmail.com",
+    "gender": "Female"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/642590ce1f1273b4bc735487
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI1NThkNTllOGE3NGI0ZmEwMmViNzMiLCJpYXQiOjE2ODAxNjkyODh9.nz_4uZmFNPGwkQweh4FM2lCt26yXRoWYt09x-ohNv2Y
